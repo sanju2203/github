@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<title>Dashboard</title>
+</head>
+<body>
+	<div class="container">
+    	<input type="checkbox" id="check">
+
+	    <!-- Header-->
+	    <header>
+	      <label for="check">
+	        <i class="fa-solid fa-bars" id="sidebar_btn"></i>
+	      </label>
+	      <div class="left_area">
+	        <h3>Dashboard</h3>
+	      </div>
+	      <div class="right_area">
+	        <a href="#" class="logout_btn">Logout</a>
+	      </div>
+	      <div class="search">
+                <input type="text" name="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+	    </header>
+<!------------------------------------ Sidebar --------------------------------------------------->
+			<div class="sidebar">
+		      <center>
+		        <img src="1.png" class="profile_image">
+		        <h4><i class="fa fa-circle text-success"></i>Online</h4>
+		      </center>
+		      <a href="#"><i class="fa-solid fa-desktop"></i><span>Dashboard</span></a>
+		      <a href="#"><i class="fa-solid fa-user-graduate"></i><span>Students</span></a>
+		      <a href="#"><i class="fa-solid fa-book"></i></i><span>Subjects</span></a>
+		      <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span>Offline Exams</span></a>
+		      <a href="#"><i class="fa-solid fa-circle-question"></i><span>Quiz</span></a>
+		      <a href="#"><i class="fa-solid fa-chart-bar"></i><span>Analysis</span></a>
+	    	</div>
+<!--------------------------------------- Cards ------------------------------------------------->
+		<div class="content">&nbsp;
+			<div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">10</div>
+                        <div class="card-name">Deparments</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1217</div>
+                        <div class="card-name">Students</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">42</div>
+                        <div class="card-name">Teachers</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">40</div>
+                        <div class="card-name">Subjects</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                </div>
+            </div>
+<!----------------------------------------- Chart ------------------------------------------------->	
+			<div class="charts">
+				<div class="chart">
+					<h2>Analysis of A.Y. 2021-22 passing</h2>
+					<canvas id="barChart"></canvas>
+				</div>
+<!--------------------------------------- Table ------------------------------------------>
+				<div class="tables">
+					<table style="width: 100%;">
+						<tr>
+							<th style="width: 60%;">Subjects</th>
+							<th>Score in Percentage</th>
+           				</tr>
+                        <tr>
+                            <td>Discrete Mathematics</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Logic Design and Computer Organization</td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>Data Structures and Algorithms</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Object Oriented Programming</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>Basics of Computer Network</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>Engineering Mathematics- III</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <td>Processor Architecture</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Database Management System</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Graphics</td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>95</td>
+                        </tr>
+                	</table>
+            	</div>
+        	</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+	<script src="chart1.js"></script>
+</body>
+</html>
